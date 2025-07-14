@@ -75,7 +75,7 @@ The project focuses on uncovering trends around:
 ### 1. Clone the Repository
 
 ```bash
-git clone https://github.com/<your-username>/Youtube_videos_analytics.git
+git clone https://github.com/ramnaresh-ahi/Youtube_videos_analytics.git
 cd Youtube_videos_analytics
 ```
 
@@ -114,6 +114,8 @@ Data is sourced from publicly available [Kaggle datasets](https://www.kaggle.com
 
 ---
 
-👤 Created by [Ramnaresh Ahi](https://github.com/ramnaresh-ahi)  
-📧 Email: ramnareshahi000@gmail.com
+## 👤 Created by
+
+[Ramnaresh Ahirwar](https://github.com/ramnaresh-ahi)  
+📧 Email: ramnareshahi77@gmail.com
 
