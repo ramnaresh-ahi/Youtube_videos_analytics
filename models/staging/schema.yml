@@ -1,0 +1,62 @@
+
+version: 2
+
+models:
+  - name: stg_viewers
+    description: "This table contains viewer interactions with videos and their activities."
+    columns:
+      - name: country_code
+        description: "Country code of viewer who watched videos."
+      - name: video_id
+        description: "video id for videos which got attention of views."
+      - name: thumbanil_link
+        description: "Link of video's thumbnail."
+      - name: views
+        description: "Number of views got videos from a particular country."
+      - name: avg_view_percentage
+        description: "Average percentage of the video that viewers watch."
+      - name: avg_watch_time
+        description: "Average amount of time viewer spend watching the video."
+      
+  - name: stg_comments
+    description: "This table contains comment of the video."
+    columns:
+      - name: comment_id
+        description: "This is a primary key(unique identifier for each row) in this table."
+        tests:
+          - not_null
+          - unique
+      - name: video_id,
+        description: "Id of video that got comment by user/viewer."
+      - name: user_id
+        description: "Id of viewer/user who comment on the video."
+      - name: date
+        description: "When comment was added."
+  
+  - name: stg_videos
+    description: "This table contains data about the video."
+    columns:
+      - name: video_id
+        description: "This is a primary key(unique identifier for each row) in this table."
+        tests: 
+          - not_null
+          - unique
+      - name: publish_date
+        description: "When video was published."
+      - name: subscribers_lost
+        description: "Number of subscriber unsubscribe channel at video."
+      - name: subscribers_gained
+        description: "Number of viewer subscribe the channel at video."
+      - name: revenue_per_thou_views
+        description: "Amount of revenue at per thousand views on video."
+      - name: cost_per_thou_view
+        description: "Amount of cost spend on video at per thousand views."
+      - name: avg_view_duration
+        description: " Average duration of video watched by viewer."
+      - name: estimated_revenue
+        description: "Estimated amount of revenue generate by video."
+      - name: impressions
+        description: "Number of impression got by video."
+      - name: click_through_rate
+        description: "Click throught rate of video."
+        
