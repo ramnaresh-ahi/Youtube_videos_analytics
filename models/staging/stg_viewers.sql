@@ -12,8 +12,8 @@ WITH viewers AS(
         video_likes_removed as likes_removed,
         user_subscriptions_added as subscriptions_added,
         user_subscriptions_removed as subscriptions_removed,
-        ROUND(average_view_percentage) as avg_view_percentage,
-        average_watch_time as avg_watch_time,
+        ROUND(average_view_percentage::NUMERIC(10,4), 2) as avg_view_percentage,
+        ROUND(average_watch_time::NUMERIC(10,4), 2) as avg_watch_time,
         user_comments_added as comments_added
     FROM
         {{source('raw', 'country_and_subscriber')}}
