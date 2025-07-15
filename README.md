@@ -70,6 +70,12 @@ The project focuses on uncovering trends around:
 
 ---
 
+## 📊 Dashboard
+
+![YouTube Videos Analytics Dashboard](https://github.com/ramnaresh-ahi/Youtube_videos_analytics/blob/main/dashboard/youtube_videos_analytics.png)
+
+---
+
 ## 🚀 Getting Started
 
 ### 1. Clone the Repository
